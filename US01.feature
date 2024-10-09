@@ -14,12 +14,12 @@ Feature: US01 - Visualizar información de la empresa
 
     Scenario: ES02: Verificación de la presencia en redes sociales
     Given que el usuario se encuentra en la sección [Sobre nosotros]
-    When dé click los [íconos] de redes sociales
+    When dé click los <íconos> de redes sociales
     Then los enlaces deben dirigirlo a los [perfiles oficiales] de la empresa en las plataformas correspondientes
 
     Examples: INPUT
-        | Redes sociales de AuraHealth |
-        | Instagram  | Facebook  | X  |
+        | Instagram.png | Facebook.png | X.png |
+        | click |
 
     Examples: OUTPUT
         | Redirecciona al sitio correspondiente  |
