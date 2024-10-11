@@ -6,8 +6,8 @@ Feature: US01 - Visualizar información de la empresa
     Then la plataforma le mostrará la información de la empresa
 
     Examples: INPUT
-        | Sobre nosotros |
-        | Misión | Visión | Equipo |
+        |      Sobre nosotros     |
+        | Misión, Visión y Equipo |
 
     Examples: INPUT
         | Redirigir a las secciones seleccionadas |
