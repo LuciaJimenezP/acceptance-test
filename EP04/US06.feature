@@ -1,32 +1,31 @@
 Feature: Consultar calendario
 
-    Como usuario,
-    quiero visualizar mis recordatorios en un calendario de manera clara y organizada,
+    Como usuario, quiero visualizar mis recordatorios en un calendario de manera clara y organizada,
     para obtener una visión general de todos mis eventos de salud próximos.
 
-    Scenario Outline : Visualización de calendario
-    Give que el <usuario> ha ingresado a la <sección> "Recordatorios", 
-    When selecciona la <opción> de "Ver calendario", 
+    Scenario Outline: Visualización de calendario
+    Give que el <usuario> ha ingresado a la <seccion> "Recordatorios", 
+    When selecciona la <opcion> de "Ver calendario", 
     Then se mostrará un <calendario> que organiza todos los recordatorios de salud del usuario, 
     con las fechas resaltadas según la proximidad de los eventos. 
 
     Examples: Input
-      | usuario | sección | opción |
+      | usuario | seccion | opcion |
       | Alessandro | "Recordatorios" | "Ver Calendario" |
 
     Examples: Output
       | calendario |
       | Cita medica - 10/03/24 |
 
-    Scenario  Outline : Cambio de vista del calendario
+    Scenario Outline: Cambio de vista del calendario
     Given que el <usuario> está visualizando el calendario de recordatorios, 
     When elige cambiar la <vista> entre mes, semana o día,
     Then el calendario se actualizará para <mostrar> los recordatorios en la vista seleccionada, 
     And mantendrá la claridad en la visualización de los eventos. 
 
     Examples: Input
-      | usuario | "recordatorio" | vista | 
-      | Alessandro | calendario | Julio, 2 - 8 julio y 10 julio|
+      | usuario | vista | 
+      | Alessandro | Julio, 2 - 8 julio y 10 julio|
                                 
     Examples: Output
       | mostrar |
