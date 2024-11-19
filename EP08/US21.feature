@@ -7,7 +7,8 @@ Feature: Foro de Discusión sobre Tratamientos Complementarios
 Scenario: ES01: Publicar un mensaje en el foro
     Given el usuario ha iniciado sesión en la plataforma
     And el usuario ha accedido a la sección del foro de discusión
-    When el paciente selecciona el <campo> "mensaje", escribe un <mensaje> y selecciona la <opción>: "publica"
+    When el paciente selecciona el <campo> "mensaje", escribe un <mensaje> 
+    y selecciona la <opción>: "publica"
     Then el <mensaje> debe aparecer en el <foro>
 
     Examples: Input
